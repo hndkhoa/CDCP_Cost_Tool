@@ -1,0 +1,20 @@
+{
+    "ontario": {
+        "diagnostic": [
+            {
+                "first-dental-visit": "$50.67",
+                "recall-examination": "$34.49",
+                "emergency-examination": "$74.56"
+            }
+        ]
+    },
+    "bc": {
+        "diagnostic": [
+            {
+                "first-dental-visit": "$42.64",
+                "recall-examination": "$29.97",
+                "emergency-examination": "$54.95"
+            }
+        ]
+    }
+}
