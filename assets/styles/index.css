@@ -8,19 +8,23 @@ body {
   font-style: normal;
 }
 
-.service-form {
+.toolWrapper {
   max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid var(--white);
-  border-radius: 0.625rem;
   background-color: var(--white);
+  margin: 0 auto;
+  border-radius: 0.625rem;
   width: 50%;
   margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-form {
+  padding: 0.625rem 1.25rem;
 }
 .service-form h1 {
   text-align: center;
@@ -56,4 +60,47 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: var(--light-blue);
+}
+
+.detailContainer {
+  background-color: var(--white);
+}
+.detailContainer #serviceDetails img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.detailContainer #serviceDetails h1 {
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3125rem;
+  text-align: center;
+  color: var(--dark-blue);
+}
+.detailContainer #serviceDetails h2 {
+  color: var(--light-blue);
+  font-size: 1.25rem;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--dark-blue);
+  padding: 1.25rem 0 0;
+  margin-bottom: -1px;
+}
+.detailContainer #serviceDetails .textWrapper {
+  background-color: var(--dark-blue);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.detailContainer #serviceDetails .textWrapper p {
+  color: var(--white);
+  margin: 0.3125rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.625rem;
+}
+.detailContainer #serviceDetails .textWrapper p:last-child {
+  margin-bottom: 0;
+  border: none;
 }/*# sourceMappingURL=index.css.map */

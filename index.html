@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CDCP Cost</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" />
-    <script type="text/javascript" src="./assets/index.js"></script>
+    <script type="text/javascript" src="./assets/index.js" defer></script>
+
   </head>
   <body>
-    <div class="service-form">
-      <h1>CDCP Cost</h1>
-      <form action="/submit" method="post">
-        <div class="form-group">
-          <label for="province">Province:</label>
-          <select name="province" id="provinces">
-            <option value="on">Ontario</option>
-            <option value="bc">British Colombia</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="services">Services:</label>
-          <select name="province" id="provinces">
-            <option value="first-visit">First Dental Visit</option>
-            <option value="recall">Recall Examination</option>
-            <option value="emergency">Emergency Examination</option>
-          </select>
-        </div>
-
-        <input type="submit" value="Check" />
-      </form>
+    <div class="toolWrapper">
+      <div class="service-form">
+        <h1>CDCP Information</h1>
+  
+          <div class="form-group">
+            <label for="province">Province:</label>
+            <select id="provinceSelect">
+              <option value="">Select Province</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="services">Services:</label>
+            <select id="serviceSelect">
+              <option value="">Select Service</option>
+            </select>
+          </div>
+      </div>
+      <div class="detailContainer">
+        <div id="serviceDetails"></div>
+      </div>
     </div>
+    
   </body>
 </html>

@@ -1,6 +1,5 @@
 @import "mixins.css";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   background: linear-gradient(
@@ -14,13 +13,11 @@ body {
   font-style: normal;
 }
 
-.service-form {
+.toolWrapper {
   max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid var(--white);
-  border-radius: 0.625rem;
   background-color: var(--white);
+  margin: 0 auto;
+  border-radius: 0.625rem;
   width: 50%;
   margin: auto;
   position: absolute;
@@ -29,12 +26,18 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
 
+.service-form {
   h1 {
     text-align: center;
     text-transform: uppercase;
     color: var(--dark-blue);
   }
+  
+  padding: .625rem 1.25rem;
 }
 
 .form-group {
@@ -55,7 +58,6 @@ select {
 }
 
 input {
-
   &[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -67,6 +69,59 @@ input {
 
     &:hover {
       background-color: var(--light-blue);
+    }
+  }
+}
+
+.detailContainer {
+  background-color: var(--white);
+
+  #serviceDetails {
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.5625rem;
+      text-transform: uppercase;
+      margin-bottom: .3125rem;
+      text-align: center;
+      color: var(--dark-blue);
+    }
+
+    h2 {
+      color: var(--light-blue);
+      font-size: 1.25rem;
+      margin: 0;
+      text-transform: capitalize;
+      text-align: center;
+      background-color: var(--dark-blue);
+      padding: 1.25rem 0 0;
+      margin-bottom: -1px;
+    }
+
+    .textWrapper {
+      background-color: var(--dark-blue);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+
+        color: var(--white);
+        margin: .3125rem 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.625rem;
+
+        &:last-child {
+          margin-bottom: 0;
+          border: none;
+        }
+      }
     }
   }
 }
