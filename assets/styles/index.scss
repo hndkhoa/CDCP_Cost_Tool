@@ -9,12 +9,12 @@ body {
   );
   font-family: var(--font-family);
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 400; 
   font-style: normal;
 }
 
 .toolWrapper {
-  max-width: 400px;
+  max-width: 31.25rem;
   background-color: var(--white);
   margin: 0 auto;
   border-radius: 0.625rem;
@@ -119,6 +119,7 @@ input {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-size: .9375rem;
 
         &:last-child {
           margin-bottom: 0;
