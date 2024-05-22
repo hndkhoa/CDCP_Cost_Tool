@@ -72,11 +72,13 @@ input[type=submit]:hover {
   margin: 0 auto;
 }
 .detailContainer #serviceDetails h1 {
-  font-size: 1.5625rem;
+  font-size: 1.4375rem;
   text-transform: uppercase;
-  margin-bottom: 0.3125rem;
   text-align: center;
   color: var(--dark-blue);
+  width: 100%;
+  max-width: 75%;
+  margin: 0.9375rem auto;
 }
 .detailContainer #serviceDetails h2 {
   color: var(--light-blue);
@@ -99,6 +101,9 @@ input[type=submit]:hover {
   margin: 0.3125rem 0;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .detailContainer #serviceDetails .textWrapper p:last-child {
   margin-bottom: 0;

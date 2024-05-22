@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Populate the select province service
     const selectService = (selectedProvince) => {
         serviceSelect.innerHTML = '<option value="">Select Service</option>'; // Clear previous options
+        serviceDetails.innerHTML = "";
         const province = data.find((prov) => prov.name === selectedProvince);
 
         if (province) {
@@ -92,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const textWrapper = document.createElement("div");
         textWrapper.className = "textWrapper";
 
-        console.log(selectedProvflag);
 
         if (selectedProvince) {
             const selectedService = selectedProvince.services.find(service => service.name === selectedServiceName);
