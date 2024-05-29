@@ -1,20 +1,43 @@
-{
-    "ontario": {
-        "diagnostic": [
+[
+    {
+      "name": "Ontario",
+      "flag": "assets/images/ontario_flag.png",
+      "services": [
+        {
+          "name": "Diagnostic",
+          "service": [
             {
-                "first-dental-visit": "$50.67",
-                "recall-examination": "$34.49",
-                "emergency-examination": "$74.56"
+              "First Dental Visit": "$50.67",
+              "Recall Examination": "$34.49",
+              "Emergency Examnination": "$74.56"
             }
-        ]
+          ]
+        },
+        {
+          "name": "Prevention",
+          "service": [
+            {
+              "Polishing": "$7.75"
+            }
+          ]
+        }
+      ]
     },
-    "bc": {
-        "diagnostic": [
+    {
+      "name": "British Columbia",
+      "flag": "assets/images/BC_flag.png",
+      "services": [
+        {
+          "name": "Diagnostic",
+          "service": [
             {
-                "first-dental-visit": "$42.64",
-                "recall-examination": "$29.97",
-                "emergency-examination": "$54.95"
+              "First Dental Visit": "$42.64",
+              "Recall Examination": "$29.97",
+              "Emergency Examnination": "$54.95"
             }
-        ]
+          ]
+        }
+      ]
     }
-}
+  ]
+  
