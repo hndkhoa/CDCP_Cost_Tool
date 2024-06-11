@@ -13,23 +13,47 @@ body {
   background-color: var(--white);
   margin: 0 auto;
   border-radius: 0.625rem;
-  width: 50%;
+  width: 100%;
   margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
 }
 
 .service-form {
+  position: relative;
   padding: 0.625rem 1.25rem;
+}
+.service-form .mapleleaf-icon {
+  max-width: 3.25rem;
+  width: 100%;
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 0.5rem 1rem 0 1rem;
+  border-radius: 5rem 5rem 0 0;
+}
+.service-form .mapleleaf-icon img {
+  width: 100%;
 }
 .service-form h1 {
   text-align: center;
   text-transform: uppercase;
   color: var(--dark-blue);
+  font-size: 1.5rem;
+}
+.service-form h1 span {
+  display: inline-block;
+}
+.service-form p {
+  text-align: center;
+  font-weight: 500;
+}
+.service-form p span {
+  display: inline-block;
 }
 
 .form-group {
@@ -39,6 +63,7 @@ body {
 label {
   display: block;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 select {
@@ -62,9 +87,6 @@ input[type=submit]:hover {
   background-color: var(--light-blue);
 }
 
-.detailContainer {
-  background-color: var(--white);
-}
 .detailContainer #serviceDetails img {
   width: 100%;
   max-width: 200px;
@@ -82,7 +104,7 @@ input[type=submit]:hover {
 }
 .detailContainer #serviceDetails h2 {
   color: var(--light-blue);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 0;
   text-transform: capitalize;
   text-align: center;
@@ -90,23 +112,56 @@ input[type=submit]:hover {
   padding: 1.25rem 0 0;
   margin-bottom: -1px;
 }
-.detailContainer #serviceDetails .textWrapper {
+.detailContainer #serviceDetails h3 {
+  color: var(--light-blue);
+  font-size: 1rem;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: left;
+  background-color: var(--dark-blue);
+  padding: 1rem 0 0;
+}
+.detailContainer #serviceDetails .textWrapper-a, .detailContainer #serviceDetails .textWrapper-b {
   background-color: var(--dark-blue);
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.detailContainer #serviceDetails .textWrapper p {
+.detailContainer #serviceDetails .textWrapper-a hr, .detailContainer #serviceDetails .textWrapper-b hr {
+  width: 100%;
+  border: 0.0425rem dashed var(--white);
+  margin: 0 auto;
+  opacity: 0.1;
+}
+.detailContainer #serviceDetails .textWrapper-a p, .detailContainer #serviceDetails .textWrapper-b p {
   color: var(--white);
   margin: 0.3125rem 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid RGBA(204, 204, 204, 0.25);
   padding-bottom: 0.625rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 0.9375rem;
+  align-items: center;
+  opacity: 0.9;
 }
-.detailContainer #serviceDetails .textWrapper p:last-child {
+.detailContainer #serviceDetails .textWrapper-a p:last-child, .detailContainer #serviceDetails .textWrapper-b p:last-child {
   margin-bottom: 0;
   border: none;
+}
+.detailContainer #serviceDetails .textWrapper-a p span, .detailContainer #serviceDetails .textWrapper-b p span {
+  flex-basis: 66.66%;
+  line-height: 1.25;
+}
+.detailContainer #serviceDetails .textWrapper-a {
+  padding-bottom: 0;
+}
+.detailContainer #serviceDetails .textWrapper-b {
+  padding: 0.4375rem 1.25rem 1.25rem;
+}
+.detailContainer #serviceDetails .textWrapper-b .disclaimer {
+  font-size: 0.8rem;
+  line-height: 1.25;
+  opacity: 0.5;
+  font-style: italic;
 }/*# sourceMappingURL=index.css.map */
